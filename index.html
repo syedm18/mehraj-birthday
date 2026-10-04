@@ -1,3 +1,32 @@
+<script>
+    const birthdayPassword = "MEHRAJ04102002";
+
+    const enteredPassword = prompt(
+        "🔐 This birthday surprise is private.\n\nEnter the password:"
+    );
+
+    if (enteredPassword !== birthdayPassword) {
+        document.body.innerHTML = `
+            <div style="
+                min-height:100vh;
+                display:flex;
+                align-items:center;
+                justify-content:center;
+                text-align:center;
+                padding:30px;
+                background:#160b0d;
+                color:#f5e8d0;
+                font-family:Georgia,serif;
+            ">
+                <div>
+                    <div style="font-size:50px;">🔐</div>
+                    <h1>Private Surprise</h1>
+                    <p>This birthday surprise is only for Mehraj. ❤️</p>
+                </div>
+            </div>
+        `;
+    }
+</script>
 <!DOCTYPE html>
 <html lang="en">
 
